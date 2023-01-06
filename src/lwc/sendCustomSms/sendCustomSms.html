@@ -1,0 +1,12 @@
+<!--
+ - Created by GabyZamfir on 04/01/2023.
+ -->
+
+<!-- Send Custom Sms -->
+<template>
+    <lightning-card title="Send SMS to Gold Customer">
+        <lightning-spinner if:true={isLoading} alternative-text="Loading" size="small"></lightning-spinner>
+        <input type="text" value={message} class="slds-size_1-of-1 slds-input" onchange={handleInputChange} />
+        <button class="slds-button slds-button_brand slds-size_1-of-1" onclick={handleSendSms}>Send</button>
+    </lightning-card>
+</template>
